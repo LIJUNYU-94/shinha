@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  height: 100vh;
+  margin: 0;
+}
+
+#gameCanvas {
+  border: 1px solid #000;
+  transform: scale(2);
+  transform-origin: top center;
+  background: url(../img/haoren.png) no-repeat 50% 5%;
+  background-size: 50%;
+}
+
+
+#startButton {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 85vh;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+p {
+  position: absolute;
+  font-size: 24px;
+  /* text-align: right; */
+  left: 5vw;
+}
+.rule {
+  top: 50vh;
+}
+.tboss {
+  top: 20vh;
+  display: none;
+}
+.tpoint {
+  top: 40vh;
+}
+.tlevel {
+  top: 25vh;
+}
+span {
+  font-size: 32px;
+}
+.lvl {
+  font-size: 24px;
+  position: absolute;
+  left: 5vw;
+  top: 32vh;
+}
+
+#level {
+  font-size: 20px;
+}
+@media screen and (min-width: 1800px) {
+  #gameCanvas {
+    transform: scale(2.4);
+    
+  }
+  #startButton{
+    bottom:5vh;
+    top:auto
+  }
+}
+
+@media screen and (max-width: 1538px) {
+  #gameCanvas {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #gameCanvas {
+    transform: scale(1.3);
+  }
+}
+@media screen and (max-width: 900px) {
+  #gameCanvas {
+    transform: scale(1);
+    margin-top: 20px;
+  }
+}

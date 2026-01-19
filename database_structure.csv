@@ -1,0 +1,29 @@
+﻿Table,Column,Type,Nullable,Key,Default,Extra
+users,id,"bigint unsigned",NO,PRI,,auto_increment
+users,name,varchar(255),NO,,,
+users,email,varchar(255),NO,UNI,,
+users,email_verified_at,timestamp,YES,,,
+users,password,varchar(255),NO,,,
+users,remember_token,varchar(100),YES,,,
+users,created_at,timestamp,YES,,,
+users,updated_at,timestamp,YES,,,
+,,,,,,
+scores,id,"bigint unsigned",NO,PRI,,auto_increment
+scores,user_id,"bigint unsigned",NO,MUL,,
+scores,points,int,NO,,,
+scores,created_at,timestamp,YES,,,
+scores,updated_at,timestamp,YES,,,
+,,,,,,
+screenshots,id,"bigint unsigned",NO,PRI,,auto_increment
+screenshots,user_id,"bigint unsigned",NO,MUL,,
+screenshots,image_path,varchar(255),NO,,,
+screenshots,score,int,YES,,,
+screenshots,created_at,timestamp,YES,,,
+screenshots,updated_at,timestamp,YES,,,
+,,,,,,
+likes,id,"bigint unsigned",NO,PRI,,auto_increment
+likes,user_id,"bigint unsigned",NO,MUL,,
+likes,screenshot_id,"bigint unsigned",NO,MUL,,
+likes,created_at,timestamp,YES,,,
+likes,updated_at,timestamp,YES,,,
+,,,,,,
