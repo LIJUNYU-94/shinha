@@ -370,6 +370,7 @@ function drawBoss() {
   bossx += bossdx;
   checkBossHit();
   if (y > canvas.height) {
+    saveScore(points);
     alert("you have been killed by shinha");
     alert(`your final point is ${points} `);
     gameReset();
